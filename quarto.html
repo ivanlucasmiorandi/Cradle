@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cradle Quarto Piso</title>
+</head>
+<body>
+        <div id="game-screen" class="screen hidden">
+            <div id="hud">
+                <div id="player-stats">
+                    <div class="stat">
+                        <span class="label">Nível:</span>
+                        <span id="level">1</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Vida:</span>
+                        <span id="health">100/100</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label" id="resource-label">Stamina:</span>
+                        <span id="resource">50/50</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">XP:</span>
+                        <span id="xp">0/100</span>
+                    </div>
+                </div>
+                <div id="equipment">
+                    <div class="equip-slot">
+                        <span class="label">Arma:</span>
+                        <span id="weapon">Espada Básica</span>
+                    </div>
+                    <div class="equip-slot">
+                        <span class="label">Armadura:</span>
+                        <span id="armor">Armadura Básica</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-area">
+                <div id="story-text">
+                    <h2 id="location-name"></h2>
+                    <p id="story-content"></p>
+                </div>
+
+                <div id="actions">
+                    <button class="action-btn">Explorar</button>
+                    <button class="action-btn">Inventário</button>
+                    <button class="action-btn">Atributos</button>
+                    <button class="action-btn">Mapa</button>
+                </div>
+
+                <div id="combat-interface" class="hidden">
+                    <div id="enemy-info">
+                        <h3 id="enemy-name"></h3>
+                        <div class="health-bar">
+                            <div class="health-fill" style="width: 100%;"></div>
+                        </div>
+                        <span id="enemy-health"></span>
+                    </div>
+                    
+                    <div id="combat-actions">
+                        <button class="combat-btn">Ataque Básico</button>
+                        <button class="combat-btn">Habilidade 1</button>
+                        <button class="combat-btn">Habilidade 2</button>
+                        <button class="combat-btn">Defender</button>
+                        <button class="combat-btn">Item</button>
+                    </div>
+                    
+                    <div id="combat-log">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

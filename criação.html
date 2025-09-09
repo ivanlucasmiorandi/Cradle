@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Personagem</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>A descida do Cradle</h1>
+            <div id="character-creation">
+                <h2>Criação do Personagem</h2>
+                <div class="input-group">
+                    <label for="player-name">Nome do Herói:</label>
+                    <input type="text" id="player-name" placeholder="Digite seu nome">
+                </div>
+                <div class="input-group">
+                    <label>Escolha sua Classe:</label>
+                    <div class="class-selection">
+                        <div class="class-option" data-class="guerreiro">
+                            <h3>Guerreiro</h3>
+                            <p>Especialista em combate corpo a corpo com alta resistência.</p>
+                        </div>
+                        <div class="class-option" data-class="arqueiro">
+                            <h3>Arqueiro</h3>
+                            <p>Mestre em ataques à distância com alta precisão.</p>
+                        </div>
+                        <div class="class-option" data-class="mago">
+                            <h3>Mago</h3>
+                            <p>Manipulador de forças mágicas com poderosos feitiços.</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="start-game">Iniciar Jornada</button>
+            </div>
+        </div><!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>A descida do Cradle</title>
+        </head>
+        <body>
+                <div id="game-screen" class="screen hidden">
+                    <div id="hud">
+                        <div id="player-stats">
+                            <div class="stat">
+                                <span class="label">Nível:</span>
+                                <span id="level">1</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Vida:</span>
+                                <span id="health">100/100</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label" id="resource-label">Stamina:</span>
+                                <span id="resource">50/50</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">XP:</span>
+                                <span id="xp">0/100</span>
+                            </div>
+                        </div>
+                        <div id="equipment">
+                            <div class="equip-slot">
+                                <span class="label">Arma:</span>
+                                <span id="weapon">Espada Básica</span>
+                            </div>
+                            <div class="equip-slot">
+                                <span class="label">Armadura:</span>
+                                <span id="armor">Armadura Básica</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="content-area">
+                        <div id="story-text">
+                            <h2 id="location-name"></h2>
+                            <p id="story-content"></p>
+                        </div>
+        
+                        <div id="actions">
+                            <button class="action-btn">Explorar</button>
+                            <button class="action-btn">Inventário</button>
+                            <button class="action-btn">Atributos</button>
+                            <button class="action-btn">Mapa</button>
+                        </div>
+        
+                        <div id="combat-interface" class="hidden">
+                            <div id="enemy-info">
+                                <h3 id="enemy-name"></h3>
+                                <div class="health-bar">
+                                    <div class="health-fill" style="width: 100%;"></div>
+                                </div>
+                                <span id="enemy-health"></span>
+                            </div>
+                            
+                            <div id="combat-actions">
+                                <button class="combat-btn">Ataque Básico</button>
+                                <button class="combat-btn">Habilidade 1</button>
+                                <button class="combat-btn">Habilidade 2</button>
+                                <button class="combat-btn">Defender</button>
+                                <button class="combat-btn">Item</button>
+                            </div>
+                            
+                            <div id="combat-log">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+</body>
+</html>
